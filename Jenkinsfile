@@ -23,6 +23,11 @@ pipeline {
             sh 'echo \'Testing Edge\''
           }
         }
+        stage('Test IE') {
+          steps {
+            sh 'echo \'Testing IE\''
+          }
+        }
       }
     }
     stage('Deploy') {
